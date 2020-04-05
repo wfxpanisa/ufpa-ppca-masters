@@ -1,0 +1,19 @@
+ digraph graphname {
+
+     splines=false;
+     size="12,4";
+
+     a [shape=box label="Controllable input factors"];
+     b [shape=box label="Process"];
+     c [shape=box label="Uncontrollable input factors"];
+     d [shape=box label="Output measures"];
+     //e [shape=box]
+
+     a -> b -> d;
+     a -> b;
+     a -> b;
+     c -> b;
+     c -> b;
+     {rank=same; a b d}
+
+   }
